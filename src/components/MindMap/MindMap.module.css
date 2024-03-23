@@ -1,0 +1,9 @@
+.mind_map {
+  margin: 60px 0;
+  @media (min-width: 768px) {
+    margin: 80px 0;
+  }
+  @media (min-width: 1280px) {
+    margin: 120px 0;
+  }
+}

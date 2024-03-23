@@ -1,0 +1,70 @@
+.line {
+  height: 52px;
+  position: relative;
+  background-color: var(--primary);
+  overflow: hidden;
+  @media (min-width: 1280px) {
+    height: 86px;
+  }
+}
+.line > div {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  width: 957px;
+  transform: translateX(1914px);
+  animation-name: mobile;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+   /* animation-play-state: paused;  */
+
+  @media (min-width: 1280px) {
+    width: 1582px;
+    transform: translateX(3164px);
+    animation-name: tablet;
+  }
+}
+
+.line > div:nth-child(2) {
+  animation-delay: -10s;
+}
+.line > div:nth-child(3) {
+  animation-delay: -20s;
+}
+
+@keyframes mobile {
+  0% {
+    transform: translateX(1914px);
+  }
+  100% {
+    transform: translateX(-957px);
+  }
+}
+
+@keyframes tablet {
+  0% {
+    transform: translateX(3164px);
+  }
+  100% {
+    transform: translateX(-1582px);
+  }
+}
+
+.line * {
+  font-family: RightGrotesk-CompactBlack;
+  font-size: 36px;
+  text-transform: uppercase;
+
+  @media (min-width: 1280px) {
+    font-size: 64px;
+  }
+}
+.line svg {
+    width: 36px;
+    height: 36px;
+    margin-top: 6px;
+}

@@ -1,16 +1,15 @@
+import Header from './Header/Header';
+import Hero from './Hero/Hero';
+import About from './About/About';
+import MindMap from './MindMap/MindMap';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      {/* <Header />
+      <Hero /> */}
+      <About />
+      <MindMap />
+    </>
   );
 };

@@ -1,0 +1,26 @@
+.card_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  @media screen and (min-width: 1440px) {
+    grid-gap: 48px;
+  }
+}
+.swiper_card {
+  display: flex !important;
+  justify-content: center;
+}
+.controllers{
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 24px;
+}
+.controllers button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  font-family: Biro Script Plus;
+  font-size: 24px;
+  line-height: 1;
+}

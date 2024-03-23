@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: RightGrotesk-CompactBlack;
+    src: url("./RightGrotesk-CompactBlack.otf") format("opentype");
+}
+
+@font-face {
+    font-family: RightGrotesk-Medium;
+    src: url("./RightGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: RightGrotesk-NarrowLight;
+    src: url("./RightGrotesk-NarrowLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Rightgrotesk-spatialblack;
+    src: url("./rightgrotesk-spatialblack.otf") format("opentype");
+}
+
+@font-face {
+    font-family: RightGrotesk-TightMedium;
+    src: url("./RightGrotesk-TightMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: RightGrotesk-WideMedium;
+    src: url("./RightGrotesk-WideMedium.otf") format("opentype");
+}
