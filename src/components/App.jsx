@@ -6,8 +6,8 @@ import MindMap from './MindMap/MindMap';
 export const App = () => {
   return (
     <>
-      {/* <Header />
-      <Hero /> */}
+      <Header />
+      <Hero />
       <About />
       <MindMap />
     </>
