@@ -1,5 +1,4 @@
 import css from './Banner.module.css';
-import useMediaQuery from 'helpers/useMediaQuery';
 
 function Banner({ children }) {
   const numChildren = 3;
