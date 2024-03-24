@@ -1,3 +1,131 @@
-.qwe{
-    color: red;
+.hero {
+  margin: 54px 8px 0;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 12px;
+  @media screen and (min-width: 768px) {
+    border-radius: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    border-radius: 24px;
+  }
+}
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 56px;
+  padding: 36px 0 19px;
+  position: relative;
+  @media (min-width: 480px) {
+    max-width: 216px;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    max-width: 592px;
+    margin: 0 auto;
+    padding: 124px 0 143px;
+    align-items: stretch;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 197px 0 206px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1168px;
+  }
+}
+.hero_container img {
+  margin: 6px 0 -6px;
+  @media (min-width: 768px) {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 136px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 266px;
+  }
+  @media (min-width: 1440px) {
+    left: 326px;
+  }
+}
+.subtitle {
+  font-family: Biro Script Plus Bold US;
+  font-size: 16px;
+  line-height: 1.68;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+.description {
+  text-transform: uppercase;
+  font-family: Messina Sans Mono;
+  font-size: 12px;
+  line-height: 1.1;
+  margin-top: 12px;
+  text-align: center;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.button {
+  text-transform: uppercase;
+  width: 216px;
+  background-color: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(10px);
+  border: none;
+  padding: 10px 70px 12px 70px;
+  border-radius: 8px;
+  font-family: RightGrotesk-CompactBlack;
+  font-size: 16px;
+  line-height: 1.18;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    padding: 10px 61px 12px 61px;
+    border-radius: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 337px;
+    padding: 16px auto 20px;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  font-family: RightGrotesk-CompactBlack;
+  font-size: 44px;
+  line-height: 1;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 92px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 164px;
+  }
+}
+
+.action_block {
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 337px;
+  }
+}
+
+.action_block .description {
+  margin-bottom: 16px;
+  text-align: justify;
+  text-indent: 80px;
 }

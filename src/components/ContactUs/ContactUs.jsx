@@ -25,7 +25,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="container">
+    <section id="mint" className="container">
       <h3>are you in?</h3>
       <div className={css.text}>
         <NameIcon />

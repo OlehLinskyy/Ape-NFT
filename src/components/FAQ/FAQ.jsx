@@ -33,7 +33,7 @@ function FAQ() {
     setShowId(id);
   }
   return (
-    <section className="container">
+    <section id="faq" className="container">
       <h3>faq</h3>
       <ul>
         {data.map((data, id) => (

@@ -19,7 +19,7 @@ const data = [
 function MindMap() {
   const isTablet = useMediaQuery('(min-width:768px)');
   return (
-    <section className={isTablet ? 'container' : 'container_helper'}>
+    <section id="mind_map" className={isTablet ? 'container' : 'container_helper'}>
       <h3>mind map</h3>
       <Cards data={data} />
     </section>

@@ -31,7 +31,7 @@ function Arts() {
     sliderSix,
   ];
   return (
-    <section className={isMobile ? 'container_helper' : 'container'}>
+    <section id="arts" className={isMobile ? 'container_helper' : 'container'}>
       <h3>collection</h3>
       <Swiper
         slidesPerView={slidesPerView}
