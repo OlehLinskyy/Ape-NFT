@@ -1,4 +1,3 @@
-import css from './MindMap.module.css';
 import Cards from './Cards/Cards';
 import useMediaQuery from 'helpers/useMediaQuery';
 const data = [
@@ -20,7 +19,7 @@ const data = [
 function MindMap() {
   const isTablet = useMediaQuery('(min-width:768px)');
   return (
-    <section className={isTablet ? 'container' : css.mind_map}>
+    <section className={isTablet ? 'container' : 'container_helper'}>
       <h3>mind map</h3>
       <Cards data={data} />
     </section>

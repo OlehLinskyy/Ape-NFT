@@ -4,9 +4,9 @@
 @import './fonts/RightGrotesk/stylesheet.css';
 
 :root {
-  --white: #FFFFFF;
-  --primary: #DC3B5A;
-  --secondary: #1E1E1E;
+  --white: #ffffff;
+  --primary: #dc3b5a;
+  --secondary: #1e1e1e;
   --background: #181818;
 }
 
@@ -31,6 +31,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 ul,
 button,
 .list {
@@ -40,11 +41,13 @@ button,
 ul {
   list-style: none;
 }
-img{
+img {
   display: block;
 }
-a { color: inherit; text-decoration: inherit }
-
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 .container {
   margin: 60px 72px;
@@ -52,24 +55,34 @@ a { color: inherit; text-decoration: inherit }
     max-width: 216px;
     margin: 60px auto;
   }
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     max-width: 592px;
     margin: 80px auto;
   }
-  @media (min-width:1280px) {
+  @media (min-width: 1280px) {
     max-width: 1032px;
     margin: 120px auto;
   }
-  @media (min-width:1440px) {
+  @media (min-width: 1440px) {
     max-width: 1168px;
+  }
+}
+
+.container_helper {
+  margin: 60px 0;
+  @media (min-width: 768px) {
+    margin: 80px 0;
+  }
+  @media (min-width: 1280px) {
+    margin: 120px 0;
   }
 }
 
 #about {
   margin-bottom: 0;
-} 
+}
 
-.information{
+.information {
   text-transform: uppercase;
   font-family: Messina Sans Mono;
   font-size: 16px;
@@ -80,24 +93,21 @@ a { color: inherit; text-decoration: inherit }
     line-height: 1.2;
   }
 }
-.description{
+.description {
   text-transform: uppercase;
   font-family: Messina Sans Mono;
   font-size: 12px;
   line-height: 1.17;
   padding: 16px 0;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.18;
-    
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.2;
-   
   }
 }
-
 svg.addsharp {
   @media (min-width: 1280px) {
     width: 36px;
@@ -112,12 +122,12 @@ h3 {
   line-height: 0.9;
   text-align: center;
   margin-bottom: 24px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 80px;
     line-height: 1;
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     font-size: 160px;
     margin-bottom: 80px;
   }
@@ -128,8 +138,8 @@ h4 {
   font-family: RightGrotesk-CompactBlack;
   font-size: 32px;
   line-height: 1;
-  
-  @media screen and (min-width: 1280px){
+
+  @media screen and (min-width: 1280px) {
     font-size: 64px;
   }
 }

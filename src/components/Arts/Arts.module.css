@@ -1,0 +1,32 @@
+.slide {
+  width: 216px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 12px;
+  @media (min-width: 768px) {
+    width: 284px;
+    height: 336px;
+    border-radius: 24px;
+  }
+  @media (min-width: 1280px) {
+    width: 240px;
+    height: 280px;
+  }
+}
+.controllers {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 24px;
+  @media (min-width: 1280px) {
+    margin-top: 48px;
+  }
+}
+.controllers button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  font-family: Biro Script Plus;
+  font-size: 24px;
+  line-height: 1;
+}

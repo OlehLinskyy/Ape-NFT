@@ -1,0 +1,127 @@
+.card {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 8px;
+  @media (min-width: 768px) {
+    grid-template-columns: 162px 52px 1fr;
+    gap: 21px;
+  }
+  @media (min-width: 1280px) {
+    grid-template-columns: 248px 52px 1fr;
+    gap: 31px;
+  }
+  @media (min-width: 1440px) {
+    grid-template-columns: 248px 52px 1fr;
+    gap: 51px;
+  }
+}
+.button {
+  background-color: var(--background);
+  border: none;
+  color: var(--white);
+  padding: 10px 8px;
+  @media (min-width: 768px) {
+    padding: 18px 16px;
+  }
+  @media (min-width: 1280px) {
+    padding: 24px;
+  }
+}
+.button_active {
+  background-color: var(--secondary);
+  border-radius: 12px;
+  @media (min-width: 768px) {
+    border-radius: 16px;
+  }
+  @media (min-width: 1280px) {
+    border-radius: 24px;
+  }
+}
+.button h5 {
+  font-family: RightGrotesk-CompactBlack;
+  font-size: 20px;
+  line-height: 1;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 64px;
+  }
+}
+.button_active h5 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 36px;
+  }
+}
+.button p {
+  font-family: Messina Sans Mono;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: start;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+.key {
+  color: var(--primary);
+  font-family: Biro Script Plus Bold US;
+  font-size: 12px;
+  line-height: 1.6;
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.button_active .key {
+  color: var(--white);
+}
+
+.img_container {
+  position: relative;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.img_container img {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+  width: 148px;
+  height: 183px;
+  @media (min-width: 1280px) {
+    width: 248px;
+    height: 282px;
+  }
+}
+
+.button_active img {
+  opacity: 1;
+  transform: translateY(-50%) rotate(-16deg);
+  @media (min-width: 1280px) {
+    transform: translateY(-50%) rotate(-8deg);
+  }
+}
+
+.answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
+}
+
+.answer p {
+  overflow: hidden;
+}
+
+.button_active .answer {
+  grid-template-rows: 1fr;
+}
