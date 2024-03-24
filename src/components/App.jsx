@@ -10,7 +10,7 @@ import Footer from './Footer/Footer';
 export const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <About />
       <MindMap />
