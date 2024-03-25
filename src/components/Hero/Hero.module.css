@@ -93,6 +93,7 @@
   font-family: RightGrotesk-CompactBlack;
   font-size: 16px;
   line-height: 1.18;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     width: 100%;
     padding: 10px 61px 12px 61px;
@@ -104,6 +105,9 @@
     font-size: 28px;
     line-height: 1.2;
   }
+}
+.button:hover {
+  color: var(--white);
 }
 h1 {
   text-transform: uppercase;

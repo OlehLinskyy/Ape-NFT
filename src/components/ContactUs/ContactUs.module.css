@@ -92,6 +92,7 @@ textarea {
   font-size: 16px;
   line-height: 1.1;
   padding: 10px 0 12px 0;
+  cursor: pointer;
   @media (min-width: 768px) {
     width: 247px;
   }
@@ -103,6 +104,10 @@ textarea {
     line-height: 1.2;
     padding: 16px 140px 20px 140px;
   }
+}
+
+.form button:hover{
+  color: var(--secondary)
 }
 .patern_border {
   border-color: var(--primary) !important;

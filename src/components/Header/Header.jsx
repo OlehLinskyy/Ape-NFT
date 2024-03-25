@@ -1,9 +1,8 @@
 import css from './Header.module.css';
-import Logo from '../../assets/logo.png';
-import LogoLight from '../../assets/logo-light.png';
 import { ReactComponent as Discord } from '../../assets/Discord-menu.svg';
 import { ReactComponent as Logomark } from '../../assets/Logomark-Blue.svg';
 import { ReactComponent as Twitter } from '../../assets/Twitter.svg';
+import { ReactComponent as Logo} from '../../assets/logo.svg'
 import { useState, useEffect } from 'react';
 import Modal from './Modal/Modal';
 import useMediaQuery from 'helpers/useMediaQuery';
@@ -39,6 +38,12 @@ function Header() {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrollTop(scrollPosition < 150);
+    if (window.innerWidth > 767 && scrollPosition > 149) {
+        setShowDialog(false)
+    }
+    if (window.innerWidth > 767 && scrollPosition < 150) {
+        setShowDialog(true)
+    }
   };
 
   useEffect(() => {
@@ -53,12 +58,12 @@ function Header() {
     <section className={css.header}>
       {scrollTop || showDialog ? (
         <button
-          className={css.logo}
+          className={`${css.logo} ${showDialog && !scrollTop ? css.light : ''}`}
           onClick={() => {
             goToAnchor();
           }}
         >
-          <img src={(isMobile && showDialog) || (isTablet && !scrollTop) ? LogoLight : Logo} alt="logo" />
+            <Logo/>
         </button>
       ) : (
         <></>

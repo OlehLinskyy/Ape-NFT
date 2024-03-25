@@ -32,6 +32,7 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   transition-property: border, color;
+  cursor: pointer;
 
   @media screen and (min-width: 1280px) {
     height: 80px;
@@ -40,8 +41,17 @@
   }
 }
 
+.header button:hover,
+.header a:hover {
+  color: var(--white);
+}
+
 .header button.logo {
   background: transparent;
+}
+
+.header button.logo:hover {
+  color: var(--white);
 }
 
 .nav {
@@ -52,10 +62,15 @@
   }
 }
 
-.light button,
-.light a {
+.header .light button,
+.header .light a, button.light {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white);
+}
+
+.header .light button:hover,
+.header .light a:hover, button.light:hover, .header button.logo.light:hover {
+  color: var(--primary);
 }
 
 .list {
@@ -66,13 +81,14 @@
 }
 
 .nav_list {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     position: absolute;
     flex-direction: row;

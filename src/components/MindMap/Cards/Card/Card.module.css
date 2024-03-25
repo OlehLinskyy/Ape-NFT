@@ -40,6 +40,13 @@
   }
   .link svg {
     margin-left: auto;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+  }
+
+  .link:hover svg {
+    transform: translateX(16px) translateY(-16px);
   }
   
   .link h4 {
