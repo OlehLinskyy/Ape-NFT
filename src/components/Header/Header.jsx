@@ -22,7 +22,6 @@ function Header() {
       const mintElem = document.getElementById(id);
       top = mintElem?.offsetTop || 0;
     }
-    console.log(top);
     window.scrollTo({
       top: top,
       behavior: 'smooth',
@@ -70,12 +69,8 @@ function Header() {
           }`}
         >
           <li>
-            {!isMobile && isTablet && (
-              <ul
-                className={`${css.nav_list} ${
-                  (showDialog && css.active) || ''
-                }`}
-              >
+            {isTablet && (
+              <ul className={`${css.nav_list} ${showDialog ? css.active : ''}`}>
                 {sections.map((data, id) => (
                   <li key={id}>
                     <button
@@ -102,7 +97,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href='https://www.google.com/webhp?hl=uk&sa=X&ved=0ahUKEwiZotuenI6FAxVWX_EDHf66DDoQPAgJ'>
+            <a href="https://www.google.com/webhp?hl=uk&sa=X&ved=0ahUKEwiZotuenI6FAxVWX_EDHf66DDoQPAgJ">
               <Logomark />
             </a>
           </li>
