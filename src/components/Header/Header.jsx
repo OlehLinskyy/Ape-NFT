@@ -42,6 +42,7 @@ function Header() {
   };
 
   useEffect(() => {
+    setShowDialog(window.innerWidth > 767)
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

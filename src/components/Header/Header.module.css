@@ -91,7 +91,7 @@
   }
 }
 
-.nav_list.active {
+.active {
   @media screen and (min-width: 768px) {
     position: absolute;
     flex-direction: row;
