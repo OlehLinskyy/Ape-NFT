@@ -102,7 +102,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a>
+            <a href='https://www.google.com/webhp?hl=uk&sa=X&ved=0ahUKEwiZotuenI6FAxVWX_EDHf66DDoQPAgJ'>
               <Logomark />
             </a>
           </li>
