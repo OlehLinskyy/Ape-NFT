@@ -5,9 +5,12 @@
   border-radius: 12px;
   @media screen and (min-width: 768px) {
     border-radius: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   @media screen and (min-width: 1280px) {
     border-radius: 24px;
+    margin-top: 16px;
   }
 }
 .hero_container {
