@@ -58,7 +58,7 @@ function Header() {
     <section className={css.header}>
       {scrollTop || showDialog ? (
         <button
-          className={`${css.logo} ${showDialog && !scrollTop ? css.light : ''}`}
+          className={`${css.logo} ${showDialog && (!scrollTop || isMobile) ? css.light : ''}`}
           onClick={() => {
             goToAnchor();
           }}
