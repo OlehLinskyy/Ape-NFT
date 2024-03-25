@@ -58,7 +58,7 @@ function Header() {
             goToAnchor();
           }}
         >
-          <img src={showDialog ? LogoLight : Logo} alt="logo" />
+          <img src={(isMobile && showDialog) || (isTablet && !scrollTop) ? LogoLight : Logo} alt="logo" />
         </button>
       ) : (
         <></>

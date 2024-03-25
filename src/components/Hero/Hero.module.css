@@ -41,14 +41,20 @@
 }
 .hero_container img {
   margin: 6px 0 -6px;
+  width: 216px;
+  height: 284px;
   @media (min-width: 768px) {
     position: absolute;
     margin: 0;
     bottom: 0;
     left: 136px;
+    width: 283px;
+    height: 386px;
   }
   @media screen and (min-width: 1280px) {
     left: 266px;
+    width: 463px;
+    height: 612px;
   }
   @media (min-width: 1440px) {
     left: 326px;
