@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ape-NFT/static/css/main.7f915b88.css",
-    "main.js": "/Ape-NFT/static/js/main.5afa1b3c.js",
+    "main.css": "/Ape-NFT/static/css/main.a732657d.css",
+    "main.js": "/Ape-NFT/static/js/main.2f81665b.js",
     "static/media/Slider-4.png": "/Ape-NFT/static/media/Slider-4.abcda9ba8e91f9c27d27.png",
     "static/media/Slider-5.png": "/Ape-NFT/static/media/Slider-5.e186ddec97fbb0ef9e46.png",
     "static/media/BiroScriptUSPlus-Sloppy.eot": "/Ape-NFT/static/media/BiroScriptUSPlus-Sloppy.5ca5e866111ab6b0e8a3.eot",
@@ -74,15 +74,18 @@
     "static/media/MessinaSansMono-Bold.woff2": "/Ape-NFT/static/media/MessinaSansMono-Bold.61910e51851cc8d59a12.woff2",
     "static/media/MessinaSansMono-Black.woff2": "/Ape-NFT/static/media/MessinaSansMono-Black.371abe33808d4457f340.woff2",
     "static/media/metamask.svg": "/Ape-NFT/static/media/metamask.73f0d82f18677d001d3f71d87214d3f3.svg",
+    "static/media/Logomark-Blue.svg": "/Ape-NFT/static/media/Logomark-Blue.963ad2966a336b6807124a51e185370f.svg",
     "index.html": "/Ape-NFT/index.html",
     "static/media/discord.svg": "/Ape-NFT/static/media/discord.1f1b8eb799c58ef39ef093b91d40b078.svg",
+    "static/media/Discord-menu.svg": "/Ape-NFT/static/media/Discord-menu.5e39991c0b24f29faef41ea4cc612a13.svg",
+    "static/media/Twitter.svg": "/Ape-NFT/static/media/Twitter.cbb243a9358db1c1321455155961c70a.svg",
     "static/media/addsharp.svg": "/Ape-NFT/static/media/addsharp.9bcd436018be4fa5558ba0ca426d32a6.svg",
     "static/media/up-left-arrow.svg": "/Ape-NFT/static/media/up-left-arrow.3fd41a5c2037ead041a08bacc4203b69.svg",
-    "main.7f915b88.css.map": "/Ape-NFT/static/css/main.7f915b88.css.map",
-    "main.5afa1b3c.js.map": "/Ape-NFT/static/js/main.5afa1b3c.js.map"
+    "main.a732657d.css.map": "/Ape-NFT/static/css/main.a732657d.css.map",
+    "main.2f81665b.js.map": "/Ape-NFT/static/js/main.2f81665b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f915b88.css",
-    "static/js/main.5afa1b3c.js"
+    "static/css/main.a732657d.css",
+    "static/js/main.2f81665b.js"
   ]
 }
