@@ -1,5 +1,5 @@
 import css from './Card.module.css';
-import { ReactComponent as UpLeft } from '../../../../assets/up-left-arrow.svg';
+import { ReactComponent as UpLeft } from '../../../../assets/svg/up-left-arrow.svg';
 
 function Card({ data }) {
   return (

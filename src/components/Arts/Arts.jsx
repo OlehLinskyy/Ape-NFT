@@ -2,12 +2,18 @@ import css from './Arts.module.css';
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import useWindowDimensions from 'helpers/useWindowDimensions';
-import sliderOne from '../../assets/Slider-1.png';
-import sliderTwo from '../../assets/Slider-2.png';
-import sliderThree from '../../assets/Slider-3.png';
-import sliderFour from '../../assets/Slider-4.png';
-import sliderFive from '../../assets/Slider-5.png';
-import sliderSix from '../../assets/Slider-6.png';
+import sliderOne from '../../assets/jpg/Slider-1.jpg';
+import sliderOne2x from '../../assets/jpg/Slider-1-2x.jpg';
+import sliderTwo from '../../assets/jpg/Slider-2.jpg';
+import sliderTwo2x from '../../assets/jpg/Slider-2-2x.jpg';
+import sliderThree from '../../assets/jpg/Slider-3.jpg';
+import sliderThree2x from '../../assets/jpg/Slider-3-2x.jpg';
+import sliderFour from '../../assets/jpg/Slider-4.jpg';
+import sliderFour2x from '../../assets/jpg/Slider-4-2x.jpg';
+import sliderFive from '../../assets/jpg/Slider-5.jpg';
+import sliderFive2x from '../../assets/jpg/Slider-5-2x.jpg';
+import sliderSix from '../../assets/jpg/Slider-6.jpg';
+import sliderSix2x from '../../assets/jpg/Slider-6-2x.jpg';
 import useMediaQuery from 'helpers/useMediaQuery';
 
 function Arts() {
@@ -23,12 +29,30 @@ function Arts() {
     swiperRef.slideNext();
   }
   const data = [
-    sliderOne,
-    sliderTwo,
-    sliderThree,
-    sliderFour,
-    sliderFive,
-    sliderSix,
+    {
+      slider: sliderOne,
+      slider2x: sliderOne2x,
+    },
+    {
+      slider: sliderTwo,
+      slider2x: sliderTwo2x,
+    },
+    {
+      slider: sliderThree,
+      slider2x: sliderThree2x,
+    },
+    {
+      slider: sliderFour,
+      slider2x: sliderFour2x,
+    },
+    {
+      slider: sliderFive,
+      slider2x: sliderFive2x,
+    },
+    {
+      slider: sliderSix,
+      slider2x: sliderSix2x,
+    },
   ];
   return (
     <section id="arts" className={isMobile ? 'container_helper' : 'container'}>
@@ -44,7 +68,12 @@ function Arts() {
           {data.map((data, id) => (
             <SwiperSlide key={id} className={css.swiper_card}>
               <li>
-                <img className={css.slide} src={data} alt={`nft ${id}`} />
+                <img
+                  className={css.slide}
+                  src={data.slider}
+                  srcset={`${data.slider} 1x, ${data.slider2x} 2x`}
+                  alt={`nft ${id}`}
+                />
               </li>
             </SwiperSlide>
           ))}

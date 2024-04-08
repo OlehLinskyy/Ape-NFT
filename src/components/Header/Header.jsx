@@ -1,8 +1,8 @@
 import css from './Header.module.css';
-import { ReactComponent as Discord } from '../../assets/Discord-menu.svg';
-import { ReactComponent as Logomark } from '../../assets/Logomark-Blue.svg';
-import { ReactComponent as Twitter } from '../../assets/Twitter.svg';
-import { ReactComponent as Logo} from '../../assets/logo.svg'
+import { ReactComponent as Discord } from '../../assets/svg/Discord-menu.svg';
+import { ReactComponent as Logomark } from '../../assets/svg/Logomark-Blue.svg';
+import { ReactComponent as Twitter } from '../../assets/svg/Twitter.svg';
+import { ReactComponent as Logo} from '../../assets/svg/logo.svg'
 import { useState, useEffect } from 'react';
 import Modal from './Modal/Modal';
 import useMediaQuery from 'helpers/useMediaQuery';

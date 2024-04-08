@@ -1,13 +1,16 @@
 import css from './Hero.module.css';
 import useMediaQuery from 'helpers/useMediaQuery';
-import heroApeMobile from '../../assets/hero-ape-mobile.png';
-import heroApeTablet from '../../assets/hero-ape-tablet.png';
-import heroApeDesctop from '../../assets/hero-ape-desctop.png';
+import heroApeMobile from '../../assets/png/hero-ape-mobile.png';
+import heroApeMobile2x from '../../assets/png/hero-ape-mobile-2x.png';
+import heroApeTablet from '../../assets/png/hero-ape-tablet.png';
+import heroApeTablet2x from '../../assets/png/hero-ape-tablet-2x.png';
+import heroApeDesctop from '../../assets/png/hero-ape-desctop.png';
+import heroApeDesctop2x from '../../assets/png/hero-ape-desctop-2x.png';
 
 function Hero() {
   const isMobile = useMediaQuery('(max-width:767px)');
   const isTablet = useMediaQuery('(max-width:1279px)');
-
+  const isDesctop = useMediaQuery('(max-width:1439px)');
   return (
     <section id="hero" className={css.hero}>
       <div className={css.hero_container}>
@@ -19,6 +22,13 @@ function Hero() {
         <img
           src={
             isMobile ? heroApeMobile : isTablet ? heroApeTablet : heroApeDesctop
+          }
+          srcset={
+            isMobile
+              ? `${heroApeMobile} 1x, ${heroApeMobile2x} 2x`
+              : isTablet
+              ? `${heroApeTablet} 1x, ${heroApeTablet2x} 2x`
+              : `${heroApeDesctop} 1x, ${heroApeDesctop2x} 2x`
           }
           alt="heroApe"
         />

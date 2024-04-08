@@ -10,12 +10,12 @@ import Footer from './Footer/Footer';
 export const App = () => {
   return (
     <>
-      <Hero />
       <Header />
+      <Hero />
       <About />
       <MindMap />
       <FAQ />
-      <Arts /> 
+      <Arts />
       <ContactUs />
       <Footer />
     </>

@@ -12,7 +12,11 @@ function Card({ data, id, handlePickAnswer, showId }) {
       >
         <div className={css.card}>
           <div className={css.img_container}>
-            <img src={data.img} alt={data.title} />
+            <img
+              src={data.img}
+              srcset={`${data.img} 1x, ${data.img2x} 2x`}
+              alt={data.title}
+            />
           </div>
           <div className={css.key}>[ {id} ]</div>
           <div>

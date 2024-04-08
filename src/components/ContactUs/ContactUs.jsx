@@ -1,7 +1,7 @@
 import css from './ContactUs.module.css';
-import { ReactComponent as NameIcon } from '../../assets/addsharp.svg';
-import { ReactComponent as Discord } from '../../assets/discord.svg';
-import { ReactComponent as Metamask } from '../../assets/metamask.svg';
+import { ReactComponent as NameIcon } from '../../assets/svg/addsharp.svg';
+import { ReactComponent as Discord } from '../../assets/svg/discord.svg';
+import { ReactComponent as Metamask } from '../../assets/svg/metamask.svg';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
