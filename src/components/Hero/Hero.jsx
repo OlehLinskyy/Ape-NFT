@@ -22,7 +22,7 @@ function Hero() {
           src={
             isMobile ? heroApeMobile : isTablet ? heroApeTablet : heroApeDesctop
           }
-          srcset={
+          srcSet={
             isMobile
               ? `${heroApeMobile} 1x, ${heroApeMobile2x} 2x`
               : isTablet

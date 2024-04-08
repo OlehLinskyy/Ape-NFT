@@ -54,7 +54,7 @@ function About() {
               width={216}
               height={292}
               src={layerMobile}
-              srcset={`${layerMobile} 1x, ${layerMobile2x} 2x`}
+              srcSet={`${layerMobile} 1x, ${layerMobile2x} 2x`}
               alt="layerMobile"
             />
           </>
@@ -84,7 +84,7 @@ function About() {
                   width={313}
                   height={422}
                   src={layerTablet}
-                  srcset={`${layerTablet} 1x, ${layerTablet2x} 2x`}
+                  srcSet={`${layerTablet} 1x, ${layerTablet2x} 2x`}
                   alt="layerTablet"
                 />
               ) : isMedium ? (
@@ -92,7 +92,7 @@ function About() {
                   width={492}
                   height={662}
                   src={layerMedium}
-                  srcset={`${layerMedium} 1x, ${layerMedium2x} 2x`}
+                  srcSet={`${layerMedium} 1x, ${layerMedium2x} 2x`}
                   alt="layerMedium"
                 />
               ) : (
@@ -100,7 +100,7 @@ function About() {
                   width={610}
                   height={822}
                   src={layerDesktop}
-                  srcset={`${layerDesktop} 1x, ${layerDesktop2x} 2x`}
+                  srcSet={`${layerDesktop} 1x, ${layerDesktop2x} 2x`}
                   alt="layerDesktop"
                 />
               )}

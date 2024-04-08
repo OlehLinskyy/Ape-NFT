@@ -71,7 +71,7 @@ function Arts() {
                 <img
                   className={css.slide}
                   src={data.slider}
-                  srcset={`${data.slider} 1x, ${data.slider2x} 2x`}
+                  srcSet={`${data.slider} 1x, ${data.slider2x} 2x`}
                   alt={`nft ${id}`}
                 />
               </li>
