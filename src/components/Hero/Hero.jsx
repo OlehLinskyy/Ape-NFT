@@ -10,7 +10,6 @@ import heroApeDesctop2x from '../../assets/png/hero-ape-desctop-2x.png';
 function Hero() {
   const isMobile = useMediaQuery('(max-width:767px)');
   const isTablet = useMediaQuery('(max-width:1279px)');
-  const isDesctop = useMediaQuery('(max-width:1439px)');
   return (
     <section id="hero" className={css.hero}>
       <div className={css.hero_container}>
