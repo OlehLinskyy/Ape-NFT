@@ -66,7 +66,7 @@ function Header() {
             goToAnchor();
           }}
         >
-          <a href="/" aria-label="link to main page">
+          <a href="https://olehlinskyy.github.io/Ape-NFT/" aria-label="link to main page">
             <Logo />
           </a>
         </button>
