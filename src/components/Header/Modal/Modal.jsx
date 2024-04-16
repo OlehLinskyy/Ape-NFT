@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 
 const Modal = ({ isOpen, children }) => {
-  // useEffect(() => {
-  //   const handleEscape = (event) => {
-  //     if (event.key === 'Escape' && isOpen) {
-  //     //  onClose();
-  //     }
-  //   };
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape' && isOpen) {
+       onClose();
+      }
+    };
 
-  //   document.addEventListener('keydown', handleEscape);
+    document.addEventListener('keydown', handleEscape);
 
-  //   return () => {
-  //     document.removeEventListener('keydown', handleEscape);
-  //   };
-  // }, [isOpen]);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen]);
 
   return (
     <div className={`modal ${isOpen ? 'open' : ''}`}>
