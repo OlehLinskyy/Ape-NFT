@@ -39,6 +39,7 @@ function Hero() {
             </p>
           )}
           <button
+            type='button'
             className={css.button}
             onClick={() => {
               const mintElem = document.getElementById('mint');

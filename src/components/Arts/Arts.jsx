@@ -73,6 +73,7 @@ function Arts() {
                   src={data.slider}
                   srcSet={`${data.slider} 1x, ${data.slider2x} 2x`}
                   alt={`nft ${id}`}
+                  loading="lazy"
                 />
               </li>
             </SwiperSlide>
@@ -80,8 +81,8 @@ function Arts() {
         </ul>
       </Swiper>
       <div className={css.controllers}>
-        <button onClick={handlePrev}>Prev</button>
-        <button onClick={handleNext}>Next</button>
+        <button type='button' onClick={handlePrev}>Prev</button>
+        <button type='button' onClick={handleNext}>Next</button>
       </div>
     </section>
   );

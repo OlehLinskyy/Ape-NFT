@@ -7,6 +7,8 @@ function Card({ data, id, handlePickAnswer, showId }) {
   return (
     <li>
       <button
+        type='button'
+        aria-label='open card'
         onClick={handleClick}
         className={`${css.button} ${showId === id && css.button_active}`}
       >
@@ -16,6 +18,7 @@ function Card({ data, id, handlePickAnswer, showId }) {
               src={data.img}
               srcSet={`${data.img} 1x, ${data.img2x} 2x`}
               alt={data.title}
+              loading="lazy"
             />
           </div>
           <div className={css.key}>[ {id} ]</div>

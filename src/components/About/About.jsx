@@ -56,6 +56,7 @@ function About() {
               src={layerMobile}
               srcSet={`${layerMobile} 1x, ${layerMobile2x} 2x`}
               alt="layerMobile"
+              loading="lazy" 
             />
           </>
         ) : (
@@ -86,6 +87,7 @@ function About() {
                   src={layerTablet}
                   srcSet={`${layerTablet} 1x, ${layerTablet2x} 2x`}
                   alt="layerTablet"
+                  loading="lazy"
                 />
               ) : isMedium ? (
                 <img
@@ -94,6 +96,7 @@ function About() {
                   src={layerMedium}
                   srcSet={`${layerMedium} 1x, ${layerMedium2x} 2x`}
                   alt="layerMedium"
+                  loading="lazy"
                 />
               ) : (
                 <img
@@ -102,6 +105,7 @@ function About() {
                   src={layerDesktop}
                   srcSet={`${layerDesktop} 1x, ${layerDesktop2x} 2x`}
                   alt="layerDesktop"
+                  loading="lazy"
                 />
               )}
             </div>

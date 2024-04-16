@@ -41,8 +41,8 @@ function Cards({ data }) {
             </ul>
           </Swiper>
           <div className={css.controllers}>
-            <button onClick={handlePrev}>Prev</button>
-            <button onClick={handleNext}>Next</button>
+            <button type='button' onClick={handlePrev}>Prev</button>
+            <button type='button' onClick={handleNext}>Next</button>
           </div>
         </div>
       ) : (

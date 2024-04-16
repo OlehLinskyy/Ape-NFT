@@ -2,7 +2,7 @@ import css from './Header.module.css';
 import { ReactComponent as Discord } from '../../assets/svg/Discord-menu.svg';
 import { ReactComponent as Logomark } from '../../assets/svg/Logomark-Blue.svg';
 import { ReactComponent as Twitter } from '../../assets/svg/Twitter.svg';
-import { ReactComponent as Logo} from '../../assets/svg/logo.svg'
+import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
 import { useState, useEffect } from 'react';
 import Modal from './Modal/Modal';
 import useMediaQuery from 'helpers/useMediaQuery';
@@ -39,15 +39,15 @@ function Header() {
     const scrollPosition = window.scrollY;
     setScrollTop(scrollPosition < 150);
     if (window.innerWidth > 767 && scrollPosition > 149) {
-        setShowDialog(false)
+      setShowDialog(false);
     }
     if (window.innerWidth > 767 && scrollPosition < 150) {
-        setShowDialog(true)
+      setShowDialog(true);
     }
   };
 
   useEffect(() => {
-    setShowDialog(window.innerWidth > 767)
+    setShowDialog(false);
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -58,12 +58,17 @@ function Header() {
     <section className={css.header}>
       {scrollTop || showDialog ? (
         <button
-          className={`${css.logo} ${showDialog && (!scrollTop || isMobile) ? css.light : ''}`}
+          type="button"
+          className={`${css.logo} ${
+            showDialog && (!scrollTop || isMobile) ? css.light : ''
+          }`}
           onClick={() => {
             goToAnchor();
           }}
         >
-            <Logo/>
+          <a href="/" aria-label="link to main page">
+            <Logo />
+          </a>
         </button>
       ) : (
         <></>
@@ -80,6 +85,7 @@ function Header() {
                 {sections.map((data, id) => (
                   <li key={id}>
                     <button
+                      type="button"
                       onClick={() => {
                         goToAnchor(data.anchor);
                       }}
@@ -91,6 +97,7 @@ function Header() {
               </ul>
             )}
             <button
+              type="button"
               onClick={handleShowDialog}
               className={(isTablet && showDialog && css.special_menu) || ''}
             >
@@ -98,17 +105,32 @@ function Header() {
             </button>
           </li>
           <li>
-            <a href="https://discord.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://discord.com/"
+              aria-label="link to discord"
+            >
               <Discord />
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/webhp?hl=uk&sa=X&ved=0ahUKEwiZotuenI6FAxVWX_EDHf66DDoQPAgJ">
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://opensea.io/"
+              aria-label="link to opensea"
+            >
               <Logomark />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://twitter.com/"
+              aria-label="link to twitter"
+            >
               <Twitter />
             </a>
           </li>
@@ -117,6 +139,7 @@ function Header() {
           <div className={css.nav_list}>
             {sections.map((data, id) => (
               <button
+                type="button"
                 key={id}
                 className={css.anchor}
                 onClick={() => {

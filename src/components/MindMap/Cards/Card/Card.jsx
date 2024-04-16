@@ -5,7 +5,13 @@ function Card({ data }) {
   return (
     <li>
       {data.link ? (
-        <a href={data.link} className={`${css.card} ${data.link && css.link}`}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href={data.link}
+          aria-label="link to google"
+          className={`${css.card} ${data.link && css.link}`}
+        >
           <UpLeft />
           <h4>{data.title}</h4>
         </a>
